@@ -16,7 +16,7 @@ set.seed(YYMMDD)
 
 **Task 1: Complete the weight-function `w` in the code below such that it implements an importance sampler with $Y\sim Exponential(1/10)$. Also compute the relative error.**
 ```{r, eval = FALSE}
-y <- rexp(10000, rate = .01)
+y <- rexp(10000, rate = 1 / 10)
 h <- (y > 10)
 w <- ...
 mean(h * w)
